@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="icon.png" />
+
+  <script src="index.js"></script>
+
+  <title>Calculator</title>
+</head>
+
+<body>
+
+  <!-- Nav Section -->
+  <nav class="bg-slate-900">
+    <h1 class=" text-4xl text-center p-3 text-white " >Calculator</h1>
+  </nav>
+
+  <!-- Main Section -->
+  <main class="bg-blue-300 h-auto flex justify-center py-24">
+    <div class=" py-4  container flex h-auto w-96 bg-indigo-950 rounded-3xl  shadow-2xl hover:shadow-blue-950 flex-col ">
+      <textarea
+        class="mx-8 my-4  px-3 py-1 w-80 h-14 rounded-3xl border-slate-200 border-2 text-4xl font-bold text-black  bg-white"
+        placeholder="0" id="Result"></textarea>
+      <!-- <input class=" mx-8 my-4  w-80 h-16 rounded-full border-slate-200 border-2 text-8xl font-bold text-black bg-white " type="button" placeholder="0"  id="Result" >  -->
+
+
+      <div class="grid grid-cols-4 py-2 px-4   space-y-3 h-auto">
+        <button
+          class="my-3 bg-purple-400 hover:bg-purple-500 rounded-full w-16 h-16 hover:shadow-2xl font-semibold text-2xl "
+          onclick="Empty()">AC</button>
+        <button
+          class=" bg-purple-400  hover:bg-purple-500 rounded-full w-16 h-16 hover:shadow-2xl font-semibold text-2xl"
+          onclick="display('%')">%</button>
+        <button
+          class=" bg-purple-400  hover:bg-purple-500 rounded-full w-16 h-16 hover:shadow-2xl font-semibold text-2xl" onclick="Del()">Del</button>
+        <button
+          class=" bg-yellow-500  hover:bg-yellow-600 rounded-full w-16 h-16 hover:shadow-2xl font-semibold text-2xl"
+          onclick="display('/')">/</button>
+        <button
+          class=" bg-slate-400  hover:bg-slate-500  rounded-full w-16 h-16 hover:shadow-2xl font-semibold text-2xl"
+          onclick="display('7')">7</button>
+        <button class=" bg-slate-400  hover:bg-slate-500 rounded-full w-16 h-16 hover:shadow-2xl font-semibold text-2xl"
+          onclick="display('8')">8</button>
+        <button class=" bg-slate-400  hover:bg-slate-500 rounded-full w-16 h-16 hover:shadow-2xl font-semibold text-2xl"
+          onclick="display('9')">9</button>
+        <button
+          class=" bg-yellow-400  hover:bg-yellow-600 rounded-full w-16 h-16 hover:shadow-2xl font-semibold text-2xl"
+          onclick="display('*')">*</button>
+        <button class=" bg-slate-400  hover:bg-slate-500 rounded-full w-16 h-16 hover:shadow-2xl font-semibold text-2xl"
+          onclick="display('4')">4</button>
+        <button class=" bg-slate-400  hover:bg-slate-500 rounded-full w-16 h-16 hover:shadow-2xl font-semibold text-2xl"
+          onclick="display('5')">5</button>
+        <button class=" bg-slate-400  hover:bg-slate-500 rounded-full w-16 h-16 hover:shadow-2xl font-semibold text-2xl"
+          onclick="display('6')">6</button>
+        <button
+          class=" bg-yellow-500  hover:bg-yellow-600 rounded-full w-16 h-16 hover:shadow-2xl font-semibold text-2xl"
+          onclick="display('+')">+</button>
+        <button class=" bg-slate-400  hover:bg-slate-500 rounded-full w-16 h-16 hover:shadow-2xl font-semibold text-2xl"
+          onclick="display('1')">1</button>
+        <button class=" bg-slate-400  hover:bg-slate-500 rounded-full w-16 h-16 hover:shadow-2xl font-semibold text-2xl"
+          onclick="display('2')">2</button>
+        <button class=" bg-slate-400  hover:bg-slate-500 rounded-full w-16 h-16 hover:shadow-2xl font-semibold text-2xl"
+          onclick="display('3')">3</button>
+        <button
+          class=" bg-yellow-500  hover:bg-yellow-600 rounded-full w-16 h-16 hover:shadow-2xl font-semibold text-2xl"
+          onclick="display('-')">-</button>
+        <button class=" bg-slate-400  hover:bg-slate-500 rounded-full w-16 h-16 hover:shadow-2xl font-semibold text-2xl"
+          onclick="display('0')">0</button>
+        <button class=" bg-slate-400  hover:bg-slate-500 rounded-full w-16 h-16 hover:shadow-2xl font-semibold text-2xl"
+          onclick="display('.')">.</button>
+        <button
+          class=" bg-yellow-500  hover:bg-yellow-600 rounded-full w-44 h-16 hover:shadow-2xl font-semibold text-2xl"
+          onclick="Calculate('=')">=</button>
+      </div>
+    </div>
+
+
+
+    </div>
+
+  </main>
+
+
+
+</body>
+
+</html>
