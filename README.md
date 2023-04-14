@@ -1,2 +1,2 @@
-# OIBSIP-TASK-2-Calculator
+# OIBSIP-TASK-1-Calculator
 Calculator made for mathematical calculations by Html ,Tailwindcss and Javascript
